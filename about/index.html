@@ -170,7 +170,7 @@ document.addEventListener('astro:page-load', attachSearchListener);
 })();</script> </div> <main class="flex-grow">  <div class="mx-auto w-full max-w-[var(--page-width)]"> <!-- Cover --><div class="text-center pt-5 pb-10 max-w-[var(--page-width)] mx-auto md:mt-0 mt-28"> <p class="text-[var(--text-color)] text-3xl py-5 font-bold">关于</p> <p class="text-[var(--text-color-70)] font-bold">一个极简的Blog模板</p> </div> <div data-pagefind-body class="markdown-content mb-6 markdown-content onload-animation">  <p>Momo 取自小红书📕，每个新用户最初的昵称，象征着初始新生。博客的设计理念也来自于此，从简约出发，在复杂功能与简约设计之间达到一种平衡。</p>
 <h2 id="-特性">✨ 特性</h2>
 <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
-<div id="main" style="width: 600px;height:400px;"></div>
+<div id="main" style="width: 100%;height:400px;"></div>
 <script type="text/javascript">
   // 基于准备好的dom，初始化echarts实例
   var myChart = echarts.init(document.getElementById('main'));
