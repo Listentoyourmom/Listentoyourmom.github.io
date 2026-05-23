@@ -171,35 +171,6 @@ document.addEventListener('astro:page-load', attachSearchListener);
 <h2 id="-特性">✨ 特性</h2>
 <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
 <div id="main" style="width: 100%;height:400px;"></div>
-<script type="text/javascript">
-  // 基于准备好的dom，初始化echarts实例
-  var myChart = echarts.init(document.getElementById('main'));
-
-  // 指定图表的配置项和数据
-  var option = {
-    title: {
-        text: 'ECharts 入门示例'
-    },
-    tooltip: {},
-    legend: {
-      data: ['销量']
-    },
-    xAxis: {
-      data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-    },
-    yAxis: {},
-    series: [
-      {
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-      }
-    ]
-  };
-
-  // 使用刚指定的配置项和数据显示图表。
-  myChart.setOption(option);
-</script>
 <ul>
 <li><strong>极简设计</strong>：页面设计简约，黑白为主色调，蓝色进行点缀</li>
 <li><strong>深色模式</strong>：支持手动切换或自动跟随系统</li>
@@ -552,4 +523,32 @@ document.addEventListener('astro:after-swap', initPagefindSearch);
             const overlay = document.getElementById('loading-overlay');
             if (overlay) overlay.style.display = 'none';
         });
-        </script> </body> </html>  <script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.BY7WX_18.js"></script>
+        </script> <script type="text/javascript">
+  // 基于准备好的dom，初始化echarts实例
+  var myChart = echarts.init(document.getElementById('main'));
+
+  // 指定图表的配置项和数据
+  var option = {
+    title: {
+        text: 'ECharts 入门示例'
+    },
+    tooltip: {},
+    legend: {
+      data: ['销量']
+    },
+    xAxis: {
+      data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+    },
+    yAxis: {},
+    series: [
+      {
+        name: '销量',
+        type: 'bar',
+        data: [5, 20, 36, 10, 10, 20]
+      }
+    ]
+  };
+
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+</script></body> </html>  <script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.BY7WX_18.js"></script>
